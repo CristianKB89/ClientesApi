@@ -68,12 +68,6 @@
 ## Endpoints principales
 - `GET /api/clientes/{identificacion}`: Consulta cliente por identificación
 
-## Notas
-- El proyecto no utiliza AutoMapper, el mapeo entre entidad y DTO es manual y claro.
-- Si la identificación no existe, el API responde con un mensaje: `El cliente no existe` y código 404.
-- Puedes modificar la estructura y agregar más endpoints según tus necesidades.
-- No compartas tu clave personal de SQL Server. Cada usuario debe configurar su propia cadena de conexión.
-- El proyecto incluye una migración única (`InitialSetup`) para facilitar la instalación.
 
 ---
 
