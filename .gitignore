@@ -1,0 +1,41 @@
+# .gitignore para proyecto .NET
+
+# Archivos y carpetas de compilación
+bin/
+obj/
+
+# Archivos de usuario y configuración local
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Archivos de configuración de IDE
+*.swp
+*.tmp
+*.bak
+*.ncb
+*.log
+*.DS_Store
+
+# Archivos de migraciones generados por EF Core (excepto la migración inicial)
+Migrations/*
+!Migrations/InitialSetup*
+
+# Archivos de configuración de entorno
+appsettings.Development.json
+appsettings.Local.json
+
+# Paquetes NuGet
+*.nupkg
+
+# Archivos de publicación
+publish/
+
+# Archivos de test y cobertura
+TestResults/
+*.coverage
+
+# Otros
+.env
