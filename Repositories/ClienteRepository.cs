@@ -6,13 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PruebaTecnica.Repositories
 {
-    public class ClienteRepository
+    public class ClienteRepository(AppDbContext context)
     {
-        private readonly AppDbContext _context;
-        public ClienteRepository(AppDbContext context)
-        {
-            _context = context;
-        }
+        private readonly AppDbContext _context = context;
 
         public Cliente GetByIdentificacion(string identificacion)
         {

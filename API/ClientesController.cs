@@ -6,13 +6,9 @@ namespace PruebaTecnica.API
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ClientesController : ControllerBase
+    public class ClientesController(ClienteService service) : ControllerBase
     {
-        private readonly ClienteService _service;
-        public ClientesController(ClienteService service)
-        {
-            _service = service;
-        }
+        private readonly ClienteService _service = service;
 
         /// <summary>
         /// Obtiene los datos de un cliente por su identificación.
